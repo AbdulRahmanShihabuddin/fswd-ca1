@@ -18,11 +18,11 @@ function App() {
   return (
     <>
       {data.map(function(item){
-        return <div style={{
-          border:"5px red solid"
-        }}>
+        // return <div style={{
+        //   border:"5px red solid"
+        // }}>
           <TestimonialCard name={item.name} text={item.text}/>
-        </div>
+        // </div>
       })}
     </>
   )
