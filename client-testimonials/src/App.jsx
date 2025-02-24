@@ -8,11 +8,21 @@ function App() {
     {
     name:"Henry Cavill",
     text:"Exceptional service."
+  },{
+    name:"Muhammed Hiddleston",
+    text:"Bad service, would not recommend. 👎👎"
+  },{
+    name:"Jabbar Kunasnarcha",
+    text:"Service was alright, not too shabby just passes expectations."
   }]
   return (
     <>
       {data.map(function(item){
-        return <TestimonialCard name={item.name} text={item.text}/>
+        return <div style={{
+          border:"5px red solid"
+        }}>
+          <TestimonialCard name={item.name} text={item.text}/>
+        </div>
       })}
     </>
   )
